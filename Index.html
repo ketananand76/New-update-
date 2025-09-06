@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPMCE Free Fire Tournament Schedule</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* Dark background */
+            color: #e2e8f0; /* Light text */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: 2rem;
+            padding: 2.5rem;
+            background-color: #2d3748; /* Slightly lighter dark card background */
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #4a5568;
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #e53e3e; /* Accent color for the title */
+            margin-bottom: 0.5rem;
+        }
+        .header p {
+            font-size: 1.125rem;
+            color: #cbd5e0;
+        }
+        .round-card {
+            background-color: #4a5568;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        .round-card h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #fc8181; /* Accent color for round titles */
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .round-card h2 svg {
+            fill: currentColor;
+            width: 1.5em;
+            height: 1.5em;
+        }
+        .round-details p {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+        .note-card {
+            background-color: #1a202c;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin-top: 2rem;
+        }
+        .note-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #9f7aea; /* Purple accent for notes */
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        ul li::before {
+            content: '📌';
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1 class="text-4xl font-extrabold text-red-500">BPMCE Gaming Community</h1>
+            <p class="text-xl text-gray-300">Free Fire Tournament Schedule</p>
+        </div>
+
+        <!-- Round 1 Section -->
+        <div class="round-card">
+            <h2 class="text-2xl font-semibold text-red-400">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Round 1 – Battle Royale (Ranked Qualifiers)
+            </h2>
+            <div class="round-details text-gray-300">
+                <p><strong>🕒 Time: 12:00 PM – 1:00 PM</strong></p>
+                <p>16 Teams will play in 2 rooms:</p>
+                <ul class="list-disc pl-6 text-gray-300">
+                    <li>Room 1 → 8 Teams</li>
+                    <li>Room 2 → 8 Teams</li>
+                </ul>
+                <p class="mt-2">Top 5 Teams from each room will qualify.</p>
+                <p>👉 A total of 10 Teams advance.</p>
+            </div>
+        </div>
+
+        <!-- Round 2 Section -->
+        <div class="round-card">
+            <h2 class="text-2xl font-semibold text-red-400">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Round 2 – Battle Royale (Ranked Quarterfinals)
+            </h2>
+            <div class="round-details text-gray-300">
+                <p><strong>🕒 Time: 1:30 PM – 2:15 PM</strong></p>
+                <p>The 10 qualified teams battle together in one BR match.</p>
+                <p>Top 4 Teams (based on kills + placement) advance to the Semi-Finals.</p>
+            </div>
+        </div>
+
+        <!-- Round 3 Section -->
+        <div class="round-card">
+            <h2 class="text-2xl font-semibold text-red-400">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Round 3 – Clash Squad (Ranked Semi-Finals)
+            </h2>
+            <div class="round-details text-gray-300">
+                <p><strong>🕒 Time: 2:45 PM – 3:30 PM</strong></p>
+                <p>The Top 4 Teams face off in CS mode.</p>
+                <p>Top 2 Teams qualify for the Grand Final.</p>
+            </div>
+        </div>
+
+        <!-- Round 4 Section -->
+        <div class="round-card">
+            <h2 class="text-2xl font-semibold text-red-400">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Round 4 – Clash Squad (Ranked Grand Final)
+            </h2>
+            <div class="round-details text-gray-300">
+                <p><strong>🕒 Time: 4:00 PM – 5:00 PM</strong></p>
+                <p>The Top 2 Teams play a Best of 3 Clash Squad Final.</p>
+                <p>The winner will be crowned 🏆 BPMCE Free Fire Champion 2025 🎉🔥</p>
+            </div>
+        </div>
+
+        <!-- Notes Section -->
+        <div class="note-card">
+            <h3 class="text-xl font-semibold text-purple-400">📌 Important Notes</h3>
+            <ul class="text-gray-300">
+                <li>Room ID & Password will be shared 15 mins before match time.</li>
+                <li>Teams must be ready 10 mins before start.</li>
+                <li>Hacks/cheats = 🚫 instant disqualification.</li>
+                <li>BR Scoring: Kills + Placement Points</li>
+                <li>CS Scoring: Round Wins</li>
+            </ul>
+        </div>
+        
+        <!-- Recap Section -->
+        <div class="text-center mt-6">
+            <p class="text-lg font-bold text-gray-300">🔥 Format Recap:</p>
+            <p class="text-xl font-medium text-red-400">16 Teams → Top 10 → Top 4 → Top 2 → 🏆 1 Champion</p>
+        </div>
+    </div>
+</body>
+</html>
